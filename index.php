@@ -1,5 +1,6 @@
 
 <?php
+// PHP variables
 $phpVersion = PHP_VERSION;
 $serverTime = date('d M Y, h:i A');
 ?>
@@ -32,7 +33,7 @@ $serverTime = date('d M Y, h:i A');
             width: min(100%, 460px);
             padding: 42px 36px;
             text-align: center;
-            background: #fff;
+            background: white;
             border: 1px solid #e5eaf3;
             border-radius: 22px;
             box-shadow: 0 24px 70px rgba(31, 50, 90, .12);
@@ -62,7 +63,6 @@ $serverTime = date('d M Y, h:i A');
         h1 {
             margin-bottom: 12px;
             font-size: 29px;
-            letter-spacing: -.04em;
         }
 
         .intro {
@@ -128,12 +128,12 @@ $serverTime = date('d M Y, h:i A');
         <div class="details">
             <div>
                 PHP Version:
-                <strong><?= htmlspecialchars($phpVersion) ?></strong>
+                <strong><?= htmlspecialchars($phpVersion, ENT_QUOTES, 'UTF-8') ?></strong>
             </div>
 
             <div>
                 Server Time:
-                <strong><?= htmlspecialchars($serverTime) ?></strong>
+                <strong><?= htmlspecialchars($serverTime, ENT_QUOTES, 'UTF-8') ?></strong>
             </div>
         </div>
 
