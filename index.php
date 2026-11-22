@@ -116,6 +116,7 @@ $serverTime = date('d M Y, h:i A');
         <h1>It's Live!</h1>
 
         <p class="intro">
+            Sanjeev Pandey 
             Your PHP application has been successfully served.
             This page confirms that your OpenShift deployment is working.
         </p>
